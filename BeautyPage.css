@@ -1,0 +1,94 @@
+.beauty-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .carousel-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-content {
+    display: flex;
+    gap: 20px; /* Space between items */
+    overflow: hidden; /* Hide overflowing images */
+    justify-content: center;
+    width: 100%; /* Ensure proper alignment */
+  }
+  
+  .carousel-item {
+    flex: 0 0 30%; /* Each item takes 30% of the carousel width */
+    text-align: center;
+  }
+  
+  .carousel-image {
+    width: 100%; /* Stretch image to fit container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 200px; /* Set a maximum width for all images */
+    max-height: 200px; /* Set a maximum height for all images */
+    object-fit: cover; /* Crop and fit images consistently */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a polished look */
+  }
+  
+  .carousel-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333; /* Customize button color */
+  }
+  
+  
+  .carousel-button:hover {
+    transform: scale(1.2);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  h3 {
+    color: #444;
+    margin-bottom: 8px;
+  }
+  
+  p {
+    color: #666;
+    margin: 4px 0;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    background: none;
+    border: none;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+  }
+  
+  .tab.active {
+    color: #007bff; /* Highlight active tab text */
+    font-weight: bold;
+  }
+  
+  .tab.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Distance from text */
+    height: 2px;
+    background-color: #007bff; /* Underline color */
+    width: 100%;
+  }
+  

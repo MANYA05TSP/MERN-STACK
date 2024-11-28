@@ -1,0 +1,136 @@
+.womensSpaPage {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .sidebar li .circle-indicator {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .sidebar li .filled-circle {
+    width: 9px;
+    height: 9px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+  
+  .sidebar li.selected {
+    font-weight: bold;
+  }
+  
+  .services {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .service-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ff9800;
+  }
+  
+  .rating span.filled {
+    color: #ffc107;
+  }
+  
+  .cost {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #45a049;
+  }
+  .add-to-cart {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart.in-cart {
+    background-color: #ff9800;
+  }
+  
+  .add-to-cart:hover {
+    opacity: 0.9;
+  }
+  
+  .cart-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+  }
+  
+  .cart-count {
+    background-color: #f44336;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    padding: 3px 8px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+  }
+    

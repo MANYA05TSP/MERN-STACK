@@ -1,0 +1,70 @@
+/* electricianPlumber.css */
+
+.electricianPlumberPage {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar li.selected {
+    background-color: #ddd;
+  }
+  
+  .services {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .service-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .service-card h3 {
+    margin: 10px 0;
+  }
+  
+  .service-card .rating span {
+    color: gold;
+  }
+  
+  .add-to-cart {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart.added {
+    background-color: #dc3545;
+  }
+  
